@@ -130,7 +130,17 @@ while True:
 
     elif option == 5:
         print("View All Student Data ==> :")
-        print(students)
+        for all_student in students.values():
+            for i in range(len(all_student)):
+                print( "serial No: ", i , "...........")
+                print("ID: ",all_student["id"])
+                print("Name: ",all_student["name"])
+                print("Age: ",all_student["age"])
+                print("Marks:")
+                print("Bangla:",all_student["marks"]["bangla"])
+                print("English:", all_student["marks"]["english"])
+                print("Math:", all_student["marks"]["math"])
+
 
     elif option == 6:
         print("Thank You. See Ya!")
