@@ -1,0 +1,22 @@
+my_fruit = {'apple', 'banana', 'cherry'}
+my_fruit.add('orange')
+my_fruit.add('banana')
+print(my_fruit)
+
+my_fruit.remove('banana')
+my_fruit.discard('pear')
+print(my_fruit)
+print('apple'  in my_fruit)
+
+print(index(my_fruit))  # This will raise an error since sets do not support indexing
+# Example of iterating through a set in Python
+
+
+for i in my_fruit:
+    print(i)
+# Example of a set in Python
+student = {'name': 'John', 'age': 20, 'grade': 'A'}
+print(type(student))
+print(student['name'])
+
+print(len(my_fruit))

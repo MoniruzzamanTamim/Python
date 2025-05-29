@@ -109,3 +109,52 @@ print(a)  # [1, 2, 3, 4]
 
 numbers = [1, 2, 2, 3, 2, 4]
 print(numbers.count(2))  # 3
+
+
+# List unpacking example  
+list_example = [1, 2, 3, 4, 5]
+# Unpacking the list into variables 
+a, b, c, d, e = list_example
+print(a)  # Output: 1
+print(b)  # Output: 2
+print(c)  # Output: 3   
+print(d)  # Output: 4
+print(e)  # Output: 5
+
+
+# List with mixed data types
+mixed_list = [1, "apple", 3.14, True]
+print(mixed_list)  # Printing the mixed list
+# List with a single element (note the comma)
+single_element_list = [42]  # Comma is not necessary for a single-element list  
+print(single_element_list)  # Printing the single-element list
+
+
+# Nested list example   
+nested_list = [1, [2, 3], [4, 5, [6, 7]]]
+print(nested_list)  # Printing the nested list  
+# List with a list of lists
+list_of_lists = [[1, 2], [3, 4], [5, 6]]    
+print(list_of_lists)  # Printing the list of lists
+# List with a list of dictionaries                  
+list_of_dicts = [{"name": "Alice"}, {"name": "Bob"}, {"name": "Charlie"}]
+print(list_of_dicts)  # Printing the list of dictionaries   
+# List with a list of tuples
+list_of_tuples = [(1, 2), (3, 4), (5, 6)]   
+print(list_of_tuples)  # Printing the list of tuples
+# List with a list of sets
+list_of_sets = [{1, 2}, {3, 4}, {5, 6}] 
+print(list_of_sets)  # Printing the list of sets 
+# List with a list of functions
+
+
+# Nested List unpacking example
+nested_list = [1, [2, 3], [4, 5, [6, 7]]]
+a, (b, c), (d, e, (f, g)) = nested_list
+print(a)  # Output: 1
+print(b)  # Output: 2
+print(c)  # Output: 3
+print(d)  # Output: 4
+print(e)  # Output: 5
+print(f)  # Output: 6
+print(g)  # Output: 7

@@ -148,6 +148,28 @@ print("After Adding new course in nested dictionary:", nested_student["details"]
 # Removing a course from the nested dictionary  
 nested_student["details"]["courses"].remove("Chemistry")  # Removes 'Chemistry' from the courses list
 print("After Removing course in nested dictionary:", nested_student["details"].get("courses"))  # Output: ['Physics', 'Biology']
-# Accessing nested dictionary values using a for loop   
 
 
+
+
+# Unpacking a dictionary into variables 
+unpacked_student = {
+    "name": "Charlie",
+    "details": {
+        "age": 24,
+        "courses": ["Biology", "Geography"],
+        "is_active": True,
+    },
+}   
+# Unpacking the dictionary into variables
+name, details = unpacked_student["name"], unpacked_student["details"]
+print("Unpacked Name:", name)  # Output: Charlie
+print("Unpacked Details:", details)  # Output: {'age': 24, 'courses': ['Biology', 'Geography'], 'is_active': True}  
+# Unpacking nested dictionary values
+age, courses, is_active = details["age"], details["courses"], details["is_active"]
+print("Unpacked Age:", age)  # Output: 24
+print("Unpacked Courses:", courses)  # Output: ['Biology', 'Geography']     
+print("Unpacked Is Active:", is_active)  # Output: True
+# Unpacking nested dictionary values with nested unpacking  
+nested_age, (nested_course1, nested_course2), nested_is_active = details["age"], details["courses"], details["is_active"]
+print("Nested Unpacked Age:", nested_age)  # Output: 24     
