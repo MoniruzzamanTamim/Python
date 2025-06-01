@@ -76,3 +76,20 @@ def Default_perameter(name,age=20):
     print(name,age)
 
 Default_perameter("Tamim")
+
+
+#Signel Perameter multiple value using 
+
+# def add(*numbers):
+#     return numbers
+
+# print(add(1, 2, 3))  # Output: 6
+
+
+
+def employ_name(*name):
+    n = name
+    for i in n:
+        print(i)
+
+employ_name("Tamim", "Moniruzzaman")

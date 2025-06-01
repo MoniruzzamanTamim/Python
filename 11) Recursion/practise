@@ -1,0 +1,134 @@
+
+
+def sum_of_three(a,b,c):
+    sum = a+b+c
+    print("Sum Of Three Number: ", sum)
+    return sum
+
+sum_of_three(125,10,78)
+
+def number_of_larger(a,b):
+    
+    if a > b:
+        print("A is a Largest Number:")
+    elif a<b:
+        print("B is a Largest Number:")
+    else :
+        print("A & B is a Equal Number")
+
+
+number_of_larger(100,10)
+
+def check_number(a):
+    if a>0:
+        print("A is a Positive Number")
+    elif a<0:
+        print("A is a Negetive Number")
+    else :
+        print("A is a Zero Number ")
+
+
+check_number(0)
+
+
+def check_leanth(s):
+    
+    a = len(s)
+    print("Leanth OF String: ", a)
+    return a
+
+check_leanth("Hello Guys How Are You")
+
+
+def square_and_cube(n,square=2,cube=3):
+    square_number = n**square
+    cube_number = n**cube
+    t = (square_number , cube_number)
+    return t
+
+print(square_and_cube(2))
+
+
+
+
+def factorial(n):
+    if n==0:
+        return 1
+    else :
+        print(n)
+    factorial(n-1)
+    
+factorial(6)
+
+print("Sum of First N Natural Numbers")
+
+def sum_n(n):
+    if n ==0:
+        return 1
+    else :
+        sum = n +sum_n(n-1)
+        return sum
+
+print(sum_n(10))
+
+
+print("Print Numbers from 1 to N")
+
+def print_1_to_n(n):
+   if n == 10:
+       return 1
+   else :
+       print(n)
+       print_1_to_n(n+1)
+
+print_1_to_n(1)
+
+
+print("Print Numbers from N to 1")
+
+
+
+def print_n_to_1(n):
+    if n ==0:
+        return 1
+    else :
+        print(n)
+    print_n_to_1(n-1)
+
+
+print_n_to_1(10)
+
+print("Fibonacci using Recursion")
+
+
+def fibonacci(n):
+    if n <=1:
+        return n
+    else :
+        return fibonacci(n-1)+fibonacci(n-2)
+
+print(fibonacci(6))
+
+
+
+
+
+
+
+def palindrome(s):
+    s = s.lower().replace(" ","")
+    return s == s[::-1]
+
+print(palindrome("tamim"))
+
+
+def reverse_list(lst):
+    # return reversed list using recursion
+    revers = lst.reverse()
+    print(revers)
+
+
+
+
+lst = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','x','y','z']
+reverse_list(lst)
