@@ -26,16 +26,12 @@ f.close()
 print(read_file)
 
 
-
 #Write Data overWring 
 
 w = open("12) File_Handling/NewFile.txt", "wt")
 w_data = w.write("Hello, Tamim, How Are You!")
 print(w_data)
 w.close()
-
-
-
 a = open("12) File_Handling/NewFile.txt", "at")
 a_data = a.write("\n This IS \"A\" , For Add Data With Ager Data thik rekhe ")
 a.close()
