@@ -1,5 +1,2 @@
-Text repeater is an online tool to generate a single word or string multiple times. You can upload whole documents from your device and make repeated copies for them as well.
-All you need to do is enter your content in the input field, select the number of repetitions and click the ‘Repeat Text’ button.
-This string repeater is completely free, and you don’t have to sign-up or register to use it.
-
-
+Hello Tamim, you Added Some Data uning "w" method, this is a overwrite old data and start from start 
+Add Some Data Using 'a' method, this method add data of last of file , no  data overwrite, old data is satable same to same
