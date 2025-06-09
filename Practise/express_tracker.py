@@ -1,7 +1,8 @@
 
 
 #Expreanse Tracer 
-
+import json
+import ast
 
 CATEGORIES = ["FOOD", "TOUR", "ENTERTRAINMENT", "OTHERS"]
 
@@ -13,7 +14,7 @@ def add():
     category = input("Please Type Your CATEGORI: ").upper()
     if category not in CATEGORIES:
         print("Categori not found!... \nPlease type valid categori....... " , CATEGORIES)
-    ammount = input("Please Type Your Amoount: ")
+    ammount = int(input("Please Type Your Amoount: "))
     notes = input("Type Your Notes (OPTIONAL): ")
 
     expense = {
@@ -24,7 +25,7 @@ def add():
     }
     expenses.append(expense)
 
-add()
+
 
 def view():
     print("View Your Data....................")
@@ -51,11 +52,11 @@ def view():
         print(F"{e["date"]} | {e["category"]} | ${e['ammount']} | {e['notes']}")
 
 
-view() 
+
 
 def summery():
     print("Show in TOTAL, MAX, AVG SPENT")
-    total = sum(e["ammount"] for e in expenses)
+    total = sum(e['ammount'] for e in expenses)
     avg = total/len(expenses)
     highest = max(expenses, key=lambda x: x["ammount"])
     
@@ -65,4 +66,40 @@ def summery():
     print(f"Highest  Expense: ${highest} Cetegory:${highest['category']}, date{highest["date"]}, Amaount{highest['ammount']}" )
 
 
-summery()
+
+def store_in_file(filename="expenses.json"):
+    with open(filename, "a") as f:
+        json.dump(expenses, f) 
+    f.close()                                                                       
+    print("📁 Data saved to file.")1
+
+
+def main():
+    store_in_file()
+
+    while True:
+        print("\n📘 Expense Tracker Menu:")
+        print("1. Add Expense")
+        print("2. View Expenses")
+        print("3. Show Summary")
+        print("4. List Tags")
+        print("5. Save & Exit")
+        
+        choice = input("Select an option: ")
+        
+        if choice == "1":
+            add()
+        elif choice == "2":
+            view()
+        elif choice == "3":
+            summery()
+        elif choice == "4":
+           store_in_file()
+        elif choice == "5":
+            store_in_file()
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid choice.")
+
+main()

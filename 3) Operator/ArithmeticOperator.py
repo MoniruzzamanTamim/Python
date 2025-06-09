@@ -60,3 +60,24 @@ import random
 print("Random Number:", (random.random()))
 print("Randiant :", random.randint(1,2)+random.randint(1,6))
 print("Uniform:", random.uniform(1,6))
+
+
+
+#Advanced Min(), Max() 
+words = ["Python", "is", "awesome"]
+longest = max(words, key=len)
+print("Longerst Word: ", longest)  # awesome
+
+expenses = [
+    {"item": "Food", "amount": 200},
+    {"item": "Transport", "amount": 150},
+    {"item": "Shopping", "amount": 300}
+]
+#এখন সবচেয়ে বেশি খরচের রেকর্ড বের করতে:
+
+highest = max(expenses, key=lambda x: x["amount"])
+print("highest",highest)
+
+#এখন সবচেয়ে কম খরচের রেকর্ড বের করতে:
+lowest = min(expenses, key=lambda x: x["amount"])
+print("highest", lowest)
