@@ -1,4 +1,5 @@
-import os
+import os 
+import json
 
 #Read File using I/) ==> read()
 print("#Read File using I/) ==> readline() it Show All data from file")

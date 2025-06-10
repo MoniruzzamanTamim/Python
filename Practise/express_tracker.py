@@ -71,7 +71,7 @@ def store_in_file(filename="expenses.json"):
     with open(filename, "a") as f:
         json.dump(expenses, f) 
     f.close()                                                                       
-    print("📁 Data saved to file.")1
+    print("📁 Data saved to file.")
 
 
 def main():
