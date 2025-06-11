@@ -1,2 +1,0 @@
-Hello Tamim, you Added Some Data uning "w" method, this is a overwrite old data and start from start 
-Add Some Data Using 'a' method, this method add data of last of file , no  data overwrite, old data is satable same to same

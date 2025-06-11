@@ -1,6 +1,8 @@
 import random
 import json
 import os
+
+
 inventory = []
 
 def add_product():
@@ -131,3 +133,5 @@ def main():
         else:
             print("Invalid Option")
 main()
+
+
