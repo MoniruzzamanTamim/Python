@@ -50,14 +50,13 @@ while True:
     elif now == alarm_time:
         print("\n⏰⏰⏰ অ্যালার্ম চলছে! ⏰⏰⏰")
         time.sleep(10)
-        break
-        # # শুধু Windows-এ কাজ করে
-        # try:
-        #     for i in range(3):
-        #         os.system("start alarm.mp3")  # তোমার system এ mp3 থাকলে চালাবে
-        #         time.sleep(1)
-        # except:
-        #     print("🔔 Alarm ringing...")
+        # শুধু Windows-এ কাজ করে
+        try:
+            for i in range(3):
+                os.system("start alarm.mp3")  # তোমার system এ mp3 থাকলে চালাবে
+                time.sleep(1)
+        except:
+            print("🔔 Alarm ringing...")
         
         
 
