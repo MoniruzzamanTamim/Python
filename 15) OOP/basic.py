@@ -70,3 +70,42 @@
 #
 # # 👉 Access Class Attribute directly from class
 # print("Class Attribute Name:", Student.name)
+
+
+# #Diferent Type Of Method .................................................
+# #Instance Method (With Self)
+#
+# class Student:
+#     def info(self):
+#         print("This is a Instance Method")
+# instance = Student()
+# instance.info()
+
+# #Class Method ( With Cls)
+# class Student:
+#     @classmethod
+#     def class_method(cls, name, age):
+#         print(F"This is a Class Method {name} {age}")
+
+# Student.class_method("My Name Is Tamim", 25)
+
+# #Static Method ( Without Self, cls)
+#
+# class Student:
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
+#     @staticmethod
+#     def static_method( ):
+#         print("Static method")
+
+
+# #Access Object Based
+# obj = Student("John", 36)
+# obj.static_method()
+#
+# #Access Class Based
+# Student.static_method()
+
+
+
