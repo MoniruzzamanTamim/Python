@@ -146,4 +146,3 @@
 # # Access private method using public method
 # rahul.access_private_method()
 # # Attempt to access private method directly (will raise an error)
-
