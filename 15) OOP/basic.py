@@ -83,11 +83,14 @@
 
 # #Class Method ( With Cls)
 # class Student:
-#     @classmethod
-#     def class_method(cls, name, age):
-#         print(F"This is a Class Method {name} {age}")
+#     school = "ABC Scholl"
 
-# Student.class_method("My Name Is Tamim", 25)
+#     @classmethod
+#     def class_method(cls, name, age, school):
+#         cls.school = school
+#         print(f"This is a Class Method {name} & Age {age} , School Name  = {cls.school}")
+
+# Student.class_method("My Name Is Tamim", 25, "Plashbari SM pilot High School")
 
 # #Static Method ( Without Self, cls)
 #
@@ -143,3 +146,4 @@
 # # Access private method using public method
 # rahul.access_private_method()
 # # Attempt to access private method directly (will raise an error)
+

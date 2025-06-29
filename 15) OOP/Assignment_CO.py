@@ -58,20 +58,20 @@ class Employee:
         self.name = name
         self.id = id
         self.department = department
-    def show_info(self):
+    def show_info(self):   #Instace Method
         print("Name is:", self.name)
         print("Id is:", self.id)
         print("deaertment is: ", self.department)
         print("Company is:", Employee.company)
         print(".........................................................................")
     @classmethod
-    def change_company(cls, cmp_name):
+    def change_company(cls, cmp_name):  #Class Method 
         cls.company = cmp_name
         print("Company changed to:", cls.company)
 
         print(".........................................................................")
     @staticmethod
-    def is_valid_id(id):
+    def is_valid_id(id):  #Static Method 
         print(F"your Id {id} is a Valid", isinstance(id, int))
         print(".........................................................................")
 
