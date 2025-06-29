@@ -28,7 +28,7 @@ class Member(Person):
         super().__init__(name, email)
         self.member_id = member_id
         self.membership_type = membership_type
-        self.borrowed_books = []  # Track borrowed books
+        self.borrowed_books = []  # Track borrowed booksok
 
     def show_info(self):
         super().show_info()
