@@ -9,7 +9,7 @@ class Student:
 
     # ✅ Instance Method
     def show_info(self):
-        print("Name is:", self.name)
+        print("Name is a:", self.name)
         print("Roll is:", self.roll)
         print("School Name is:", Student.school)
         print("--------------------------")
