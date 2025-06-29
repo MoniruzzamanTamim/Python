@@ -30,4 +30,4 @@ alls= [
        ]
 
 for all in alls:
-    all.info()
+    all.info() #All Method Printed
