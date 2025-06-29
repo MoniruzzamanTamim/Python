@@ -109,3 +109,37 @@
 
 
 
+# #Delete Object Wising Del() Keywpord.......................................
+# class Student:    
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age        
+#     def info(self):
+#         print(f"Name: {self.name}, Age: {self.age}")
+# # Create an object
+# rahul = Student("Rahul", 21)  
+# # Access the object's info method
+# print("Object created successfully")
+# rahul.info()      
+# # Delete the object using del keyword
+# del rahul
+# print("Object deleted successfully")
+
+# #Privete and Public Method........................................
+# class Student:
+#     def __init__(self, name, age):
+#         self.name = name  
+#         self.age = age
+#     def public_method(self):
+#         print(f"Public Method: Name: {self.name}, Age: {self.age    }")  
+#     def __private_method(self):
+#         print(f"Private Method: Name: {self.name}, Age: {self.age}")
+#     def access_private_method(self):
+#         self.__private_method()  # Accessing private method within the class
+# # Create an object
+# rahul = Student("Rahul", 21)  
+# # Access public method
+# rahul.public_method() 
+# # Access private method using public method
+# rahul.access_private_method()
+# # Attempt to access private method directly (will raise an error)
