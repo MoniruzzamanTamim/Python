@@ -73,7 +73,7 @@ class Depertment(University):
         super().show_info()
         print(f"DepertMent: {    self.depertmentName }")
     
-
+# print("Hello")
 class Student(Depertment): 
     
     def __init__(self, name, location,depertmentName,student_name, roll):
