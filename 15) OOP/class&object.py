@@ -83,11 +83,14 @@
 
 # #Class Method ( With Cls)
 # class Student:
-#     @classmethod
-#     def class_method(cls, name, age):
-#         print(F"This is a Class Method {name} {age}")
+#     school = "ABC Scholl"
 
-# Student.class_method("My Name Is Tamim", 25)
+#     @classmethod
+#     def class_method(cls, name, age, school):
+#         cls.school = school
+#         print(f"This is a Class Method {name} & Age {age} , School Name  = {cls.school}")
+
+# Student.class_method("My Name Is Tamim", 25, "Plashbari SM pilot High School")
 
 # #Static Method ( Without Self, cls)
 #
@@ -109,3 +112,37 @@
 
 
 
+# #Delete Object Wising Del() Keywpord.......................................
+# class Student:    
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age        
+#     def info(self):
+#         print(f"Name: {self.name}, Age: {self.age}")
+# # Create an object
+# rahul = Student("Rahul", 21)  
+# # Access the object's info method
+# print("Object created successfully")
+# rahul.info()      
+# # Delete the object using del keyword
+# del rahul
+# print("Object deleted successfully")
+
+# #Privete and Public Method........................................
+# class Student:
+#     def __init__(self, name, age):
+#         self.name = name  
+#         self.age = age
+#     def public_method(self):
+#         print(f"Public Method: Name: {self.name}, Age: {self.age    }")  
+#     def __private_method(self):
+#         print(f"Private Method: Name: {self.name}, Age: {self.age}")
+#     def access_private_method(self):
+#         self.__private_method()  # Accessing private method within the class
+# # Create an object
+# rahul = Student("Rahul", 21)  
+# # Access public method
+# rahul.public_method() 
+# # Access private method using public method
+# rahul.access_private_method()
+# # Attempt to access private method directly (will raise an error)
