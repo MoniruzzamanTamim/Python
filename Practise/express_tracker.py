@@ -3,6 +3,9 @@
 #Expreanse Tracer 
 import json
 import ast
+import os
+file_path = "Practise\\file\\expenses_tracker.json"
+
 
 CATEGORIES = ["FOOD", "TOUR", "ENTERTRAINMENT", "OTHERS"]
 
@@ -67,7 +70,7 @@ def summery():
 
 
 
-def store_in_file(filename="expenses.json"):
+def store_in_file(filename=file_path):
     with open(filename, "a") as f:
         json.dump(expenses, f) 
     f.close()                                                                       
@@ -75,8 +78,10 @@ def store_in_file(filename="expenses.json"):
 
 
 def main():
-    store_in_file()
-
+    
+    with open(file_path, "w") as f:
+        pass  # কিছু না লিখে খালি করে দিচ্ছি
+    
     while True:
         print("\n📘 Expense Tracker Menu:")
         print("1. Add Expense")

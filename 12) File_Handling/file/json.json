@@ -1,1 +1,7 @@
-[{"name": "Tamima", "age": 25}, {"name": "Rahim", "age": 30}]
+[
+    {
+        "name": "Tamim",
+        "age": 25,
+        "location": "Dhaka"
+    }
+]
