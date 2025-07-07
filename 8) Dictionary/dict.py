@@ -1,6 +1,5 @@
 
 
-
 student = {
     "name": "John Doe", 
     "age": 20,

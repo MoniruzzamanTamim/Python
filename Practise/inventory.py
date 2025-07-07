@@ -2,7 +2,7 @@ import random
 import json
 import os
 
-
+file_path = "Practise\\file\\nventory.json"
 inventory = []
 
 def add_product():
@@ -78,7 +78,7 @@ def remove():
          inventory.remove(e)
          print(f"Your Product(s) with ID {user_id} Deleted Successfully")
 
-def save_load(filename = "inventory.json"):
+def save_load(filename = file_path):
     print("\n1. Save Data\n2. Load Data")
     option = int(input("Choise an Option: "))
     if option ==1:

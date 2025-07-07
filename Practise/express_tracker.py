@@ -4,8 +4,7 @@
 import json
 import ast
 import os
-file_path = "Practise\\file\\expenses_tracker.json"
-
+file_path = "Practise\\file\\nventory.json"
 
 CATEGORIES = ["FOOD", "TOUR", "ENTERTRAINMENT", "OTHERS"]
 

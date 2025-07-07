@@ -27,7 +27,6 @@ def check_number(a):
     else :
         print("A is a Zero Number ")
 
-
 check_number(0)
 
 
@@ -132,3 +131,15 @@ def reverse_list(lst):
 
 lst = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','x','y','z']
 reverse_list(lst)
+print(reverse_list(lst))
+
+
+
+
+def fun(n):
+    if n <=1:
+        return 1
+    else:
+        return fun(n-1) +fun(n-2)
+
+print("Test:", fun(10))

@@ -44,7 +44,5 @@ month = calendar.month(2025,6)
 print(month)
 
 
-
-
 html_cal = calendar.HTMLCalendar(calendar.SUNDAY)
 print(html_cal.formatmonth(2025, 6))

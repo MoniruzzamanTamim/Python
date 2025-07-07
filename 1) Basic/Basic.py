@@ -8,7 +8,7 @@ print("HE IS \"Absullate\" Begener")
 sum= 50+58+28+  \
   50+50
 print(sum)
-#THIS IS cONCATATION
+#THIS IS CONCATATION
 print('Hello' + ' my is ' + 'tamim')
 
 #This is F-String (fortamating String Literal)

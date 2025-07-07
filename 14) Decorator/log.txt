@@ -1,0 +1,16 @@
+ [2025-07-07 11:01:51] Function 'info' called.
+  Arguments: args=('TAMIM',), kwargs={'age': 254}
+  Returned: hello TAMIM, age 254
+-----------------------------
+ [2025-07-07 11:03:21] Function 'info' called.
+  Arguments: args=('TAMIM',), kwargs={'age': 254}
+  Returned: hello TAMIM, age 254
+-----------------------------
+ [2025-07-07 11:04:08] Function 'info' called.
+  Arguments: args=('TAMIM',), kwargs={'age': 254}
+  Returned: hello TAMIM, age 254
+-----------------------------
+ [2025-07-07 11:04:31] Function 'info' called.
+  Arguments: args=('TAMIM',), kwargs={'age': 254}
+  Returned: hello TAMIM, age 254
+-----------------------------

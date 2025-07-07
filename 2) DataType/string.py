@@ -46,5 +46,6 @@ print("Convert String as a List: " , "a,b,c".split(",") )
 print("Check ITS Digis: " , text.isdigit())
 print("Check letter: " , Is_alpha.isalpha())
 print( "Replace Text: " + Is_rep.replace("tamim", "TARIF"))
+print("Check String Or Not: ", isinstance(Is_rep,str))
 
 

@@ -2,12 +2,11 @@
 
 def fact(n):
     if n == 15:
-        return
+        return n
     else :
         print(n)
         
     fact(n+1)
-
 
 fact(6)
 
@@ -29,4 +28,4 @@ def fibonacci(n):
     else:
         return fibonacci(n-1) + fibonacci(n-2)
 
-print("fibonacci in Recursion: ", fibonacci(10))  # Output: 8
+print("fibonacci in Recursion: ", fibonacci(10))  # Output: 55

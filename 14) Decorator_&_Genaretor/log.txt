@@ -1,4 +1,0 @@
- [2025-07-06 16:04:29] Function 'info' called.
-  Arguments: args=('TAMIM',), kwargs={'age': 254}
-  Returned: hello TAMIM, age 254
------------------------------

@@ -1,7 +1,7 @@
 #Basic Decorator
 
 def decorator(main_func): #Create Decorator and receive Main Function
-    
+
     def inner_decorator():
         #PreAction 
         print("PreAction:  Main function kaj korar age ki korte chai seta")
@@ -89,8 +89,8 @@ def main():
 
 main()
 
-
-
+print("\n")
+print("Project-2........................................................................")
 """✅ প্রজেক্ট নাম: custom_logger
 🎯 লক্ষ্য:
 একটি ডেকোরেটর তৈরি করবো যেটা যেকোনো ফাংশনের নাম
@@ -116,7 +116,7 @@ def logmessage(main_func):
                 f"  Returned: {result}\n"
                 "-----------------------------\n"
         ) 
-        log_file_path = "C:\\New folder\\Python\\14) Decorator_&_Genaretor\\log.txt"
+        log_file_path = "14) Decorator\\log.txt"
         with open(log_file_path, "a") as file:
             file.write(log)
             
@@ -127,7 +127,7 @@ def logmessage(main_func):
 
 @logmessage
 def  info(name,age):
-    print(f"hello {name}, age {age}")
+    print(f"hello {name}, age {age} , Your Login Information are Store log.txt File SuccessFully")
     return f"hello {name}, age {age}"
 
 info("TAMIM",age =254)

@@ -34,9 +34,8 @@ print("Today Is: ", days_name)
 import datetime
 import time
 import os  # Optional: sound play for Windows only
-
 # ইউজার থেকে অ্যালার্ম সময় ইনপুট
-alarm_time = input("Set alarm (HH:MM:SS format): ")
+alarm_time = input("Set alarm (YYYY-MM-DD HH:MM:SS format): ")
 
 # অ্যালার্ম রিং হওয়ার আগে চলতে থাকবে
 while True:
@@ -48,7 +47,7 @@ while True:
         print("Current Time:", now) 
         break
     elif now == alarm_time:
-        print("\n⏰⏰⏰ অ্যালার্ম চলছে! ⏰⏰⏰")
+        print("\n⏰⏰⏰Alerm Ringing  ⏰⏰⏰")
         time.sleep(10)
         # শুধু Windows-এ কাজ করে
         try:
@@ -57,6 +56,6 @@ while True:
                 time.sleep(1)
         except:
             print("🔔 Alarm ringing...")
-        
+       
         
 
