@@ -47,9 +47,15 @@ print(c)  # Output: 3
 
 nested_tuple_unpacking = (1, (2, 3), (4, 5, (6, 7)))
 # Unpacking the nested tuple    
-a, (b, c), (d, e, (f, g)) = nested_tuple_unpacking
-print(a)  # Output: 1   
-print(b)  # Output: 2
-print(c)  # Output: 3
+try:
+    a, (b, c), (d, e, (f, g)) = nested_tuple_unpacking
+    print(a)  # Output: 1   
+    print(b)  # Output: 2
+    print(c)  # Output: 3
+except ValueError:
+    print("Unpack Kora Sothik Hoy Nai ")
+except Exception as e:
+    print("Wrong", e)
+
 
 
