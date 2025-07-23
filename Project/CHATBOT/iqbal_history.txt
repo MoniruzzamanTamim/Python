@@ -1,0 +1,22 @@
+[25-07-23 20:47:31]  YOU: hello there
+[25-07-23 20:47:31]  BOT: I don.t Know Your Command, Please Type Write Command
+[25-07-23 20:51:44]  YOU: hi there
+[25-07-23 20:51:44]  BOT: Hello! How can I help you today?
+[25-07-23 20:51:51]  YOU: hi
+[25-07-23 20:51:51]  BOT: Hello! How can I help you today?
+[25-07-23 20:51:53]  YOU: kmn acho hi
+[25-07-23 20:51:53]  BOT: Hello! How can I help you today?
+[25-07-23 20:52:01]  YOU: kmn acho
+[25-07-23 20:52:01]  BOT: I don’t understand that. Please try a known command.
+[25-07-23 20:52:08]  YOU: how are you
+[25-07-23 20:52:08]  BOT: I'm just a bot, but I'm doing great!
+[25-07-23 20:52:14]  YOU: hou are you?
+[25-07-23 20:52:14]  BOT: I don’t understand that. Please try a known command.
+[25-07-23 20:52:20]  YOU: hou are you ?
+[25-07-23 20:52:20]  BOT: I don’t understand that. Please try a known command.
+[25-07-23 20:52:24]  YOU: hou are you
+[25-07-23 20:52:24]  BOT: I don’t understand that. Please try a known command.
+[25-07-23 20:52:28]  YOU: how are you ?
+[25-07-23 20:52:28]  BOT: I'm just a bot, but I'm doing great!
+[25-07-23 20:52:34]  YOU: how are you ?
+[25-07-23 20:52:34]  BOT: I'm just a bot, but I'm doing great!

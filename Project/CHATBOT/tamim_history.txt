@@ -1,0 +1,16 @@
+[25-07-23 20:59:09]  YOU: hi
+[25-07-23 20:59:09]  BOT: Hello! How can I help you today?
+[25-07-23 20:59:14]  YOU: hello hi
+[25-07-23 20:59:14]  BOT: Hello! How can I help you today?
+[25-07-23 20:59:19]  YOU: how are you hi
+[25-07-23 20:59:19]  BOT: Hello! How can I help you today?
+[25-07-23 20:59:30]  YOU: hi how are you
+[25-07-23 20:59:30]  BOT: Hello! How can I help you today?
+[25-07-23 20:59:42]  YOU: hi kmn acho
+[25-07-23 20:59:42]  BOT: Hello! How can I help you today?
+[25-07-23 20:59:53]  YOU: what is your name bye
+[25-07-23 20:59:53]  BOT: I'm PyBot – your Python-powered chatbot.
+[25-07-23 21:00:05]  YOU: bye what is your name
+[25-07-23 21:00:05]  BOT: I'm PyBot – your Python-powered chatbot.
+[25-07-23 21:00:22]  YOU: bye
+[25-07-23 21:00:22]  BOT: Goodbye! Have a great day.
