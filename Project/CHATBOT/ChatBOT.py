@@ -30,7 +30,7 @@ def authentication(fun):
                 password = input("Type your PassWord: ")
                 for user_database, user_crediantial in user_info.items():
                     if username in user_database:
-                        current_user = username
+                        current_user = username #For 
                         if username in user_crediantial["userName"] and password in user_crediantial["passWord"]:
                             fun(*args, **kwargs)
                             print(f"\nWelcome Chatbot  Application......{username.upper()}. ")
