@@ -89,6 +89,7 @@ for url in urls:
     t = threading.Thread(target=fetch_data, args=(url,))
     t.start()
     threads.append(t)
+
 # ✅ সব থ্রেড শেষ না হওয়া পর্যন্ত অপেক্ষা
 for t in threads:
     t.join()
@@ -96,20 +97,22 @@ end_time = time.time()
 print(f"\nTotal time taken: {end_time - start_time:.2f} seconds")
 
 
-#Fetch Data from API and Print JSON Data
-# ✅ এই ফাংশনটি নির্দিষ্ট URL থেকে ডেটা আনে এবং JSON ডেটা প্রিন্ট করে
-url  = "https://jsonplaceholder.typicode.com/posts"
+##Project----------------------------------------------------------------------------------------------------------
 
-def fetch_data(url):
-    print(f"Fetching from {url}")
-    response = requests.get(url)
-    if response.status_code == 200:
-        print(f"Done fetching {url}, Status Code: {response.status_code}")
-        json_data = response.json()
-        for post in json_data[:20]:  # Limiting to first 20 posts for brevity
-            # ✅ প্রতিটি পোস্টের ID, Title এবং Body প্রিন্ট করা হচ্ছে    
-            print(f"Post ID: {post['id']}, Title: {post['title']}, \nBody: {post['body']}") 
-    else:
-        print(f"Failed to fetch {url}, Status Code: {response.status_code}")
+# #Fetch Data from API and Print JSON Data
+# # ✅ এই ফাংশনটি নির্দিষ্ট URL থেকে ডেটা আনে এবং JSON ডেটা প্রিন্ট করে
+# url  = "https://jsonplaceholder.typicode.com/posts"
 
-fetch_data(url)
+# def fetch_data(url):
+#     print(f"Fetching from {url}")
+#     response = requests.get(url)
+#     if response.status_code == 200:
+#         print(f"Done fetching {url}, Status Code: {response.status_code}")
+#         json_data = response.json()
+#         for post in json_data[:20]:  # Limiting to first 20 posts for brevity
+#             # ✅ প্রতিটি পোস্টের ID, Title এবং Body প্রিন্ট করা হচ্ছে    
+#             print(f"Post ID: {post['id']}, Title: {post['title']}, \nBody: {post['body']}") 
+#     else:
+#         print(f"Failed to fetch {url}, Status Code: {response.status_code}")
+
+# fetch_data(url)
