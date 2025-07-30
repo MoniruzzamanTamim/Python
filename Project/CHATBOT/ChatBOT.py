@@ -9,7 +9,7 @@ current_user = None
 
 def authentication(fun):
     @wraps(fun)
-    def inner_decorator(*args, **kwargs):
+P    def inner_decorator(*args, **kwargs):
         global current_user
         print("Welcome ChatBOT APPLication...")
         while True:

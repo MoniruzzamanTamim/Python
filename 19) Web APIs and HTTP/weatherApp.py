@@ -18,15 +18,15 @@ def get_weather(city_name, api_key):
         temp = data['main']['temp']
         feels_like = data['main']['feels_like']
         humidity = data['main']['humidity']
-        print(f"\n📍 শহর: {city}")
-        print(f"🌤️ আবহাওয়া: {weather}")
-        print(f"🌡️ Tempareture: {temp}°C (অনুভব: {feels_like}°C)")
-        print(f"💧 আর্দ্রতা: {humidity}%")
+        print(f"\n📍 CITY: {city}")
+        print(f"🌤️ Weather: {weather}")
+        print(f"🌡️ Tempareture: {temp}°C (feels_like: {feels_like}°C)")
+        print(f"💧 humidity: {humidity}%")
     else:
         print("❌ City information not found. Please enter the name correctly.")
 
 
 # 🔑 নিজের API Key বসাও
 api_key = "5a68f249fd2cd34161ebdfb432ddd41f"
-city = input("🔍 আবহাওয়া দেখতে শহরের নাম লিখুন: ")
+city = input("🔍Please Type Your City Name: ")
 get_weather(city, api_key)
