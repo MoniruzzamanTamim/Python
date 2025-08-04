@@ -4,7 +4,6 @@ import json # Importing the json library for handling JSON data
 
 # Function to fetch data from a given URL and print the JSON response
 # fetch_data function ----GET METHOD 
-
 def getData(url):
     response = requests.get(url) # Making a GET request to the URL
     if response.status_code == 200: # Checking if the request was successful    

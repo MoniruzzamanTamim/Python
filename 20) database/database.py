@@ -1,57 +1,65 @@
+# import mysql.connector # Import Database Module
+
+
+# #Connct Database [IF Database Not Created.....]
+# connection = mysql.connector.connect(
+#     host="localhost",
+#     user="tamim",
+#     password="tamim",
+# )
+# if connection.is_connected():
+#     print("Connect Server  Succhessfully..")
+# else:
+#     print("Database Not Connected ")
+
+# #Create Database Object For Execute All Work 
+# cursor = connection.cursor()
+
+# #Create Database 
+# try:
+#     create_database = """CREATE DATABASE IF NOT EXISTS UNIVERSITY"""
+#     cursor.execute(create_database)
+#     print("Database Create Successfully....")
+# except Exception as e:
+#     print(e)
+
+# # Step 3: Close old connection & connect to 'UNIVERSITY' database
+# cursor.close()
+# connection.close()
+
+
+# ডাটাবেস আগে থেকে থাকলে → প্রিন্ট করবে "Database already exists"
+#ডাটাবেস না থাকলে → তৈরি করবে এবং প্রিন্ট করবে "Database created"
+
 import mysql.connector
 
-try:
-    # Step 1: Connect to database
-    connection = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        password="",
-        database="python"   # Ensure this DB exists in phpMyAdmin
-    )
+db_name = "UNIVERSITY"
 
-    if connection.is_connected():
-        print("✅ Connected to database.")
+# Connect to MySQL Server (Without selecting database)
+connection = mysql.connector.connect(
+    host="localhost",
+    user="tamim",
+    password="tamim"
+)
 
-        cursor = connection.cursor()
+cursor = connection.cursor()
 
-        # Step 2: Create table
-        create_table_query = """
-        CREATE TABLE IF NOT EXISTS users (
-            id INT AUTO_INCREMENT PRIMARY KEY,
-            name VARCHAR(100),
-            email VARCHAR(100),
-            age INT
-        )
-        """
-        cursor.execute(create_table_query)
-        print("🛠️ Table 'users' created (if not exists).")
+# Check if database exists
+cursor.execute("SHOW DATABASES")
+databases = [db[0] for db in cursor.fetchall()]
 
-        # Step 3: Insert sample data
-        insert_query = """
-        INSERT INTO users (name, email, age)
-        VALUES (%s, %s, %s)
-        """
-        data = [
-            ("Tamim", "tamim@example.com", 25),
-            ("Amina", "amina@example.com", 22),
-            ("Karim", "karim@example.com", 30)
-        ]
-        cursor.executemany(insert_query, data)
-        connection.commit()
-        print("✅ Sample data inserted successfully.")
+if db_name in databases:
+    print(f"✅ Database '{db_name}' already exists.")
+else:
+    cursor.execute(f"CREATE DATABASE {db_name}")
+    print(f"🎯 Database '{db_name}' created successfully.")
 
-        # Step 4: Show data
-        cursor.execute("SELECT * FROM users")
-        rows = cursor.fetchall()
-        print("\n📄 Current Users:")
-        for row in rows:
-            print(row)
+cursor.close()
+connection.close()
 
-except mysql.connector.Error as err:
-    print("❌ Error:", err)
 
-finally:
-    if connection.is_connected():
-        cursor.close()
-        connection.close()
-        print("\n🔌 Connection closed.")
+# 🔹 কোড ব্যাখ্যা
+# SHOW DATABASES → সব ডাটাবেস লিস্ট আনে
+# List comprehension দিয়ে শুধু নাম বের করা → [db[0] for db in cursor.fetchall()]
+# যদি নাম মিলে যায় → "already exists"
+# না মিললে → CREATE DATABASE করে
