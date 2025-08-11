@@ -48,4 +48,15 @@ def number_test():
 
 
 
+def open_file(path ="test.txt"):
+    with open(path, "w") as sentFile:
+        txt = "hello"
+        sentFile.write(txt)
+    return path
+    
+    
+
+
+    
+
 
