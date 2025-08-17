@@ -33,3 +33,10 @@ if __name__ == "__main__":
     breakpoint()  # food_expenses এর মধ্যে সঠিক আইটেম আছে কিনা দেখো
 
     print("Food Expenses:", food_expenses)
+
+# (Pdb) n       # পরের লাইন
+# (Pdb) p x     # ভ্যারিয়েবল চেক
+# (Pdb) s       # ফাংশনে ঢোকা
+# (Pdb) l       # আশেপাশের কোড দেখা
+# (Pdb) c       # চালিয়ে যাওয়া
+# (Pdb) q       # বের হওয়া
